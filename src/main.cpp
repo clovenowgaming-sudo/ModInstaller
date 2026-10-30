@@ -142,9 +142,9 @@ protected:
         }
         auto v = js.unwrap();
         m_total = (int)v["payload"]["count"].asInt().unwrapOr(0);
-        auto data = v["payload"]["data"].asArray().unwrapOr({});
+        auto data = v["payload"]["data"].asArray().unwrapOr(std::vector<matjson::Value>{});
         for (auto& m : data) {
-            auto vers = m["versions"].asArray().unwrapOr({});
+            auto vers = m["versions"].asArray().unwrapOr(std::vector<matjson::Value>{});
             if (vers.empty()) continue;
             Entry e;
             e.id   = m["id"].asString().unwrapOr("");

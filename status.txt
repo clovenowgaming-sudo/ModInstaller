@@ -1,0 +1,6 @@
+["completed","failure","Android32:completed:failure","Windows:completed:failure","Android64:completed:failure","Package:completed:skipped"]
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1066765Z ninja: build stopped: subcommand failed.
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1076866Z ##[error]Process completed with exit code 1.
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1084522Z ##[end-action id=__geode-sdk_build-geode-mod.build;outcome=failure;conclusion=failure;duration_ms=61530]
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1088255Z ##[start-action display=Upload artifacts;id=__geode-sdk_build-geode-mod.__actions_upload-artifact]
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1092535Z ##[end-action id=__geode-sdk_build-geode-mod.__actions_upload-artifact;outcome=skipped;conclusion=skipped;duration_ms=0]  [rc=0]

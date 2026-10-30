@@ -1,3 +1,858 @@
 $ git init -b main
 Initialized empty Git repository in /data/data/com.termux/files/home/termux-mcp/workspace/ModInstaller/.git/  [rc=0]
 $ git add -A
+  [rc=0]
+$ git -c user.name=Vinz -c user.email=vinz@users.noreply.github.com commit -m 'Mod Installer'
+[main (root-commit) 50ea8da] Mod Installer
+ 6 files changed, 359 insertions(+)
+ create mode 100644 .github/workflows/build.yml
+ create mode 100644 CMakeLists.txt
+ create mode 100644 deploy.log
+ create mode 100644 deploy.py
+ create mode 100644 mod.json
+ create mode 100644 src/main.cpp  [rc=0]
+$ gh repo create ModInstaller --public --source=. --push
+https://github.com/clovenowgaming-sudo/ModInstaller
+branch 'main' set up to track 'origin/main'. To https://github.com/clovenowgaming-sudo/ModInstaller.git
+ * [new branch]      HEAD -> main [rc=0]
+PUSHED, finish stage started in background
+$ gh run list --limit 1 --json databaseId -q '.[0].databaseId'
+41022208216  [rc=0]
+$ gh run watch 41022208216 --exit-status
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push less than a minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push less than a minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push less than a minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push less than a minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push less than a minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push less than a minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push less than a minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 1 minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 1 minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 1 minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 1 minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 1 minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 1 minute ago
+
+JOBS
+* Android32 (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 1 minute ago
+
+JOBS
+X Android32 in 1m25s (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+* Android64 (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android32: .github#3
+
+X Process completed with exit code 1.
+Android32: .github#783
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android32: .github#1
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android64: .github#3
+
+X Process completed with exit code 1.
+Android64: .github#784
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android64: .github#1
+
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 1 minute ago
+
+JOBS
+X Android32 in 1m25s (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+X Android64 in 1m29s (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android32: .github#3
+
+X Process completed with exit code 1.
+Android32: .github#783
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android32: .github#1
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android64: .github#3
+
+X Process completed with exit code 1.
+Android64: .github#784
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android64: .github#1
+
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 1 minute ago
+
+JOBS
+X Android32 in 1m25s (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+X Android64 in 1m29s (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android32: .github#3
+
+X Process completed with exit code 1.
+Android32: .github#783
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android32: .github#1
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android64: .github#3
+
+X Process completed with exit code 1.
+Android64: .github#784
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android64: .github#1
+
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 1 minute ago
+
+JOBS
+X Android32 in 1m25s (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+X Android64 in 1m29s (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android32: .github#3
+
+X Process completed with exit code 1.
+Android32: .github#783
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android32: .github#1
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android64: .github#3
+
+X Process completed with exit code 1.
+Android64: .github#784
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android64: .github#1
+
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 1 minute ago
+
+JOBS
+X Android32 in 1m25s (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+X Android64 in 1m29s (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android32: .github#3
+
+X Process completed with exit code 1.
+Android32: .github#783
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android32: .github#1
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android64: .github#3
+
+X Process completed with exit code 1.
+Android64: .github#784
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android64: .github#1
+
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 2 minutes ago
+
+JOBS
+X Android32 in 1m25s (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+X Android64 in 1m29s (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android32: .github#3
+
+X Process completed with exit code 1.
+Android32: .github#783
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android32: .github#1
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android64: .github#3
+
+X Process completed with exit code 1.
+Android64: .github#784
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android64: .github#1
+
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 2 minutes ago
+
+JOBS
+X Android32 in 1m25s (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  * Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+X Android64 in 1m29s (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android32: .github#3
+
+X Process completed with exit code 1.
+Android32: .github#783
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android32: .github#1
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android64: .github#3
+
+X Process completed with exit code 1.
+Android64: .github#784
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android64: .github#1
+
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 2 minutes ago
+
+JOBS
+X Android32 in 1m25s (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  * Post Run geode-sdk/build-geode-mod@main
+  * Post Run actions/checkout@v4
+X Android64 in 1m29s (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android32: .github#3
+
+X Process completed with exit code 1.
+Android32: .github#783
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android32: .github#1
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android64: .github#3
+
+X Process completed with exit code 1.
+Android64: .github#784
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android64: .github#1
+
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build · 41022208216
+Triggered via push about 2 minutes ago
+
+JOBS
+X Android32 in 1m25s (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+* Windows (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+X Android64 in 1m29s (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+- Package in 0s (ID 123952603555)
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android32: .github#3
+
+X Process completed with exit code 1.
+Android32: .github#783
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android32: .github#1
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android64: .github#3
+
+X Process completed with exit code 1.
+Android64: .github#784
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android64: .github#1
+
+X main Build · 41022208216
+Triggered via push about 2 minutes ago
+
+JOBS
+X Android32 in 1m25s (ID 123951885282)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+X Windows in 2m10s (ID 123951885399)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+X Android64 in 1m29s (ID 123951885543)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  X Run geode-sdk/build-geode-mod@main
+  ✓ Post Run geode-sdk/build-geode-mod@main
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+- Package in 0s (ID 123952603555)
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android32: .github#3
+
+X Process completed with exit code 1.
+Android32: .github#783
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android32: .github#1
+
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Android64: .github#3
+
+X Process completed with exit code 1.
+Android64: .github#784
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+Android64: .github#1  [rc=1]
+$ gh run download 41022208216 -D out
+ no valid artifacts found to download [rc=1]
+BUILD FAILED OR NO .geode FILE. Check: gh run view 41022208216 --log-failed
+$ gh run view 41022208216 --log-failed | tail -n 60
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.7664972Z   Run "cmake --help-policy CMP0175" for policy details.  Use the cmake_policy
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.7665525Z   command to set the policy and suppress this warning.
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.7665928Z Call Stack (most recent call first):
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.7666318Z   CMakeLists.txt:11 (setup_geode_mod)
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.7666778Z This warning is for project developers.  Use -Wno-author or -Wno-policy to
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.7667217Z suppress it.
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.7667351Z 
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.7668278Z '/home/runner/work/ModInstaller/ModInstaller/build/bindings/codegen/Codegen' 'Android64' '/home/runner/work/ModInstaller/ModInstaller/bindings-repo/bindings/2.2081' '/home/runner/work/ModInstaller/ModInstaller/build/bindings/bindings'
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.8296227Z -- Setting up ModInstaller
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.8610294Z -- Mod vinz.mod-installer is compiling for Geode version 5.11.2
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.8611373Z -- Mod vinz.mod-installer is compiling for Geometry Dash version 2.2081
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.8657725Z -- Skipping installing ModInstaller
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:52.8672964Z -- Configuring done (21.7s)
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:53.0264099Z -- Generating done (0.2s)
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:53.0270114Z -- Build files have been written to: /home/runner/work/ModInstaller/ModInstaller/build
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:47:53.0488030Z [0/2] Re-checking globbed directories...
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:00.5097712Z [1/30] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:02.4080278Z [2/30] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:03.3277284Z [3/30] Building CXX object _deps/asp2-build/CMakeFiles/asp.dir/Unity/unity_0_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:03.4441831Z [4/30] Linking CXX static library _deps/fmt-build/libfmt.a
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:03.4536811Z [5/30] Linking CXX static library _deps/asp2-build/libasp.a
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:03.7361884Z [6/30] Building CXX object _deps/arc-build/CMakeFiles/arc.dir/Unity/unity_0_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:03.7473188Z [7/30] Linking CXX static library _deps/arc-build/libarc.a
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:04.2213167Z [8/30] Running Codegen
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:09.3783704Z [9/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_14_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:09.6193433Z [10/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_13_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:11.7763699Z [11/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_12_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:16.1203494Z [12/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_11_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:18.6720561Z [13/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_9_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:18.6803336Z [14/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_8_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:18.7732686Z [15/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_10_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:22.1543752Z [16/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_7_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:24.6833464Z [17/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_6_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:24.8510617Z [18/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_5_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:26.7713453Z [19/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_4_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:28.4700120Z [20/30] Building CXX object CMakeFiles/ModInstaller.dir/cmake_pch.hxx.pch
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:29.9813450Z [21/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_3_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:31.2563474Z [22/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_1_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:31.5958097Z [23/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_2_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:31.7883950Z [24/30] Building CXX object CMakeFiles/ModInstaller.dir/geode-sdk-clone/entry.cpp.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:31.9846509Z [25/30] Building CXX object bindings/CMakeFiles/GeodeBindings.dir/Unity/unity_0_cxx.cxx.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.0440797Z [26/30] Linking CXX static library bindings/libGeodeBindings.a
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1038415Z [27/30] Building CXX object CMakeFiles/ModInstaller.dir/src/main.cpp.o
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1038999Z FAILED: [code=1] CMakeFiles/ModInstaller.dir/src/main.cpp.o 
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1048374Z /usr/local/bin/sccache /usr/local/lib/android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android23 --sysroot=/usr/local/lib/android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DARC_FEATURE_TIME=1 -DGEODE_COMP_GD_VERSION=22081 -DGEODE_GD_VERSION=2.2081 -DGEODE_GD_VERSION_STRING=\"2.2081\" -DGEODE_MOD_ID=\"vinz.mod-installer\" -DMAT_JSON_DYNAMIC=1 -DModInstaller_EXPORTS -DPROJECT_NAME=ModInstaller -I/home/runner/work/ModInstaller/ModInstaller/geode-sdk-clone/loader/include -I/home/runner/work/ModInstaller/ModInstaller/geode-sdk-clone/loader/include/Geode/cocos/include -I/home/runner/work/ModInstaller/ModInstaller/geode-sdk-clone/loader/include/Geode/cocos/extensions -I/home/runner/work/ModInstaller/ModInstaller/geode-sdk-clone/loader/include/Geode/fmod -isystem /home/runner/work/ModInstaller/ModInstaller/build/bindings/bindings -isystem /home/runner/work/ModInstaller/ModInstaller/bindings-repo/bindings/include -isystem /home/runner/work/ModInstaller/ModInstaller/cpm-cache/fmt/71b2/include -isystem /home/runner/work/ModInstaller/ModInstaller/cpm-cache/tuliphook/e901/include -isystem /home/runner/work/ModInstaller/ModInstaller/cpm-cache/result/1b9c/include -isystem /home/runner/work/ModInstaller/ModInstaller/cpm-cache/json/f349/include -isystem /home/runner/work/ModInstaller/ModInstaller/cpm-cache/nontype_functional/aaa0/include -isystem /home/runner/work/ModInstaller/ModInstaller/cpm-cache/asp2/1cba/include -isystem /home/runner/work/ModInstaller/ModInstaller/cpm-cache/arc/3609/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O3 -DNDEBUG  -std=gnu++23 -flto=thin -fPIC -Werror=return-type -ffunction-sections -fdata-sections -Winvalid-pch -Xclang -include-pch -Xclang /home/runner/work/ModInstaller/ModInstaller/build/CMakeFiles/ModInstaller.dir/cmake_pch.hxx.pch -Xclang -include -Xclang /home/runner/work/ModInstaller/ModInstaller/build/CMakeFiles/ModInstaller.dir/cmake_pch.hxx -MD -MT CMakeFiles/ModInstaller.dir/src/main.cpp.o -MF CMakeFiles/ModInstaller.dir/src/main.cpp.o.d -o CMakeFiles/ModInstaller.dir/src/main.cpp.o -c /home/runner/work/ModInstaller/ModInstaller/src/main.cpp
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1060957Z /home/runner/work/ModInstaller/ModInstaller/src/main.cpp:145:52: error: no matching member function for call to 'unwrapOr'
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1061606Z   145 |         auto data = v["payload"]["data"].asArray().unwrapOr({});
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1061981Z       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1063226Z /home/runner/work/ModInstaller/ModInstaller/cpm-cache/result/1b9c/include/Geode/Result.hpp:648:30: note: candidate template ignored: couldn't infer template argument 'defaultValue:auto'
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1064081Z   648 |             constexpr OkType unwrapOr(auto&& defaultValue
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1064412Z       |                              ^
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1065161Z /home/runner/work/ModInstaller/ModInstaller/cpm-cache/result/1b9c/include/Geode/Result.hpp:663:30: note: candidate template ignored: couldn't infer template argument 'defaultValue:auto'
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1065966Z   663 |             constexpr OkType unwrapOr(auto&& defaultValue
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1066284Z       |                              ^
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1066531Z 1 error generated.
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1066765Z ninja: build stopped: subcommand failed.
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1076866Z ##[error]Process completed with exit code 1.
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1084522Z ##[end-action id=__geode-sdk_build-geode-mod.build;outcome=failure;conclusion=failure;duration_ms=61530]
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1088255Z ##[start-action display=Upload artifacts;id=__geode-sdk_build-geode-mod.__actions_upload-artifact]
+Android64	Run geode-sdk/build-geode-mod@main	2026-10-30T07:48:32.1092535Z ##[end-action id=__geode-sdk_build-geode-mod.__actions_upload-artifact;outcome=skipped;conclusion=skipped;duration_ms=0]  [rc=0]
