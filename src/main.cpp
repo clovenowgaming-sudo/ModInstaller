@@ -141,16 +141,16 @@ protected:
             return this->render();
         }
         auto v = js.unwrap();
-        m_total = (int)v["payload"]["count"].asInt().unwrapOr(0);
+        m_total = (int)v["payload"]["count"].asInt().unwrapOr((int64_t)0);
         auto data = v["payload"]["data"].asArray().unwrapOr(std::vector<matjson::Value>{});
         for (auto& m : data) {
             auto vers = m["versions"].asArray().unwrapOr(std::vector<matjson::Value>{});
             if (vers.empty()) continue;
             Entry e;
-            e.id   = m["id"].asString().unwrapOr("");
-            e.name = vers[0]["name"].asString().unwrapOr(e.id);
-            e.ver  = vers[0]["version"].asString().unwrapOr("");
-            e.link = vers[0]["download_link"].asString().unwrapOr("");
+            e.id   = m["id"].asString().unwrapOr(std::string());
+            e.name = vers[0]["name"].asString().unwrapOr(std::string(e.id));
+            e.ver  = vers[0]["version"].asString().unwrapOr(std::string());
+            e.link = vers[0]["download_link"].asString().unwrapOr(std::string());
             if (e.link.empty()) {
                 e.link = fmt::format(
                     "https://api.geode-sdk.org/v1/mods/{}/versions/latest/download?gd={}&platform={}&geode={}",

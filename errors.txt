@@ -1,3 +1,1 @@
 /home/runner/work/ModInstaller/ModInstaller/src/main.cpp:145:52: error: no matching member function for call to 'unwrapOr'
-D:/a/ModInstaller/ModInstaller/src/main.cpp:145:52: error: no matching member function for call to 'unwrapOr'
-/home/runner/work/ModInstaller/ModInstaller/src/main.cpp:145:52: error: no matching member function for call to 'unwrapOr'
