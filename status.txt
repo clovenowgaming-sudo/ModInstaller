@@ -1,1 +1,4 @@
-["in_progress","","Android64:completed:failure","Android32:completed:failure","Windows:in_progress:"]
+
+FILES: ['out/Mod Installer/vinz.mod-installer.geode']
+DL DIR: /data/data/com.termux/files/home/storage/downloads
+COPIED out/Mod Installer/vinz.mod-installer.geode -> /data/data/com.termux/files/home/storage/downloads

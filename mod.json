@@ -1,7 +1,7 @@
 {
   "geode": "5.11.2",
   "gd": { "android": "2.2081", "win": "2.2081" },
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "id": "vinz.mod-installer",
   "name": "Mod Installer",
   "developer": "Vinz",
