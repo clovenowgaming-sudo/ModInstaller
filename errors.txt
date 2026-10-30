@@ -1,1 +1,12 @@
+RUN 41022768113
+(node:2586) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+/usr/local/bin/sccache /usr/local/lib/android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android23 --sysroot=/usr/local/lib/android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DARC_FEATURE_TIME=1 -DGEODE_COMP_GD_VERSION=22081 -DGEODE_GD_VERSION=2.2081 -DGEODE_GD_VERSION_STRING=\"2.2081\" -DGEODE_MOD_ID=\"vinz.mod-ins
 /home/runner/work/ModInstaller/ModInstaller/src/main.cpp:145:52: error: no matching member function for call to 'unwrapOr'
+/home/runner/work/ModInstaller/ModInstaller/cpm-cache/result/1b9c/include/Geode/Result.hpp:648:30: note: candidate template ignored: constraints not satisfied [with defaultValue:auto = std::vector<matjson::Value>]
+/home/runner/work/ModInstaller/ModInstaller/cpm-cache/result/1b9c/include/Geode/Result.hpp:650:26: note: because 'std::constructible_from<std::vector<matjson::Value> &, decltype(defaultValue)>' evaluated to false
+/usr/local/lib/android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__concepts/constructible.h:27:51: note: because 'is_constructible_v<std::vector<matjson::Value> &, std::vector<matjson::Value> &&>' evaluated to false
+/home/runner/work/ModInstaller/ModInstaller/cpm-cache/result/1b9c/include/Geode/Result.hpp:663:30: note: candidate template ignored: constraints not satisfied [with defaultValue:auto = std::vector<matjson::Value>]
+/home/runner/work/ModInstaller/ModInstaller/cpm-cache/result/1b9c/include/Geode/Result.hpp:665:26: note: because 'std::constructible_from<std::vector<matjson::Value> &, decltype(defaultValue)>' evaluated to false
+/usr/local/lib/android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__concepts/constructible.h:27:51: note: because 'is_constructible_v<std::vector<matjson::Value> &, std::vector<matjson::Value> &&>' evaluated to false
+1 error generated.
+##[error]Process completed with exit code 1.

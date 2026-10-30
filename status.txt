@@ -1,1 +1,1 @@
-["in_progress","","Android32:completed:failure","Android64:completed:failure","Windows:in_progress:"]
+["in_progress","","Android64:completed:failure","Android32:completed:failure","Windows:in_progress:"]
